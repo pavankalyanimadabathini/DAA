@@ -32,6 +32,7 @@ int main()
     int *a,n,i,min,max;
     printf("enter size of array:");
     scanf("%d",&n);
+    a = (int *)calloc(n+1,sizeof(int));
     for(i = 0; i < n; i++)
         scanf("%d", a+i);
     minMax(a,0,n-1,&min,&max);
